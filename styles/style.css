@@ -34,7 +34,7 @@ header #football-kicking{
 
 
 /* -----Players Part----- */
-#players{
+.players{
     width: 70%;
     /* padding: 15px; */
     margin: 5% 15%;
@@ -46,15 +46,75 @@ header #football-kicking{
 }
 .player{
     padding: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
 }
-#players .player img{
+.players .player img{
     width: 100%;
+    /* border: 1px solid gray; */
+
     /* height: 256px; */
     /* padding: 15px; */
 }
+.pic {
+    overflow: hidden;
+}
+.players .player:hover{
+box-shadow: 2px 0px 10px lightgray;
+}
+.pic:hover {
+    transform: scale(1.3);
+    transition: 1s;
+    transition-timing-function: ease-out;
+} 
 .player-details{
     width: 300px;
     height: 154px;
+}
+/* -----Highlights sections----- */
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+    padding: 5% 10% 5% 15%;
+}
+.highlights p{
+    margin-bottom: 10%;
+}
+.highlights a{
+    text-decoration: none;
+    background-color: magenta;
+    padding: 2% 5%;
+    width: 5px;
+}
+.fa-long-arrow-alt-right{
+    color: white;
+    padding: 10px 10px;
+
+}
+.highlights .match{
+    width: 400px;
+    height: 300px;
+    
+}
+/* -----Footer Styles----- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%
+}
+.footer .logo{
+    width: 40%;
+}
+.footer .icon{
+    color: gray;
+}
+.fa-instagram-square{
+    color: gray;
 }
